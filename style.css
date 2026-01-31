@@ -29,35 +29,39 @@ body, #button-container {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
 }
 
-#second-container {
+#drawing-container {
   border: 1px solid gray;
   min-height: 70vh;
   background-color: white;
+  display: grid;
 }
-
-#second-container, #button-container {
+#drawing-container .grid-case {
+  border: 1px solid lightgray;
+}
+#drawing-container, #button-container {
   min-width: 80vh;
 }
 
 #button-container, .left-button-container, .right-button-container {
-  /* border: 1px solid red; */
   display: flex;
 }
 #button-container {
   justify-content: space-between;
+  margin-top: 20px;
   margin-bottom: 20px;
+  min-height: 5vh;
+
 }
 #button-container .left-button-container {
-  /* border: 1px solid blue; */
-  min-width: 40%;
   justify-content: flex-start;
   gap: 20px;
 }
 #button-container button {
   min-width: 5rem;
+  min-height: 2rem;
   color: rgb(221, 92, 75);
   font-size: 1rem;
   border-radius: 30px;
@@ -69,5 +73,13 @@ h1 {
   justify-content: flex-end;
   gap: 20px;
 }
+
+#button-container .button-active {
+  background-color: #fcf003;
+}
+#button-container .button-active:hover {
+  background-color: #e6d900;
+}
+
 
 
